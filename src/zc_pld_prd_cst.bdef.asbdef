@@ -1,0 +1,10 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_PLD_PRD_CST alias ZI_PLD_PRD_CST_DOC
+{
+  use update;
+
+  use action ZPRINT;
+  use action ZSENDMAIL;
+}

@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Planned Production Cost Sheet"
+  },
+  "ui5AppDetails": {
+    "appId": "zpldprdcost"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_35D4E8F0D109CE9C3BEA0953C43378FA6832ECDB_TM",
+    "semanticObject": "Planned",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_35D4E8F0D109CE9C3BEA0953C43378FA6832ECDB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Planned Production Cost Sheet",
+        "icon": "sap-icon://product"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+managed implementation in class zbp_i_pld_prd_cst unique;
+strict ( 2 );
+
+define behavior for ZI_PLD_PRD_CST alias ZI_PLD_PRD_CST_DOC
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  update;
+  field ( readonly ) OrderID, CreationDate;
+  field ( mandatory ) SalesUnitPrice, Freight, Customer;
+
+  action ( features : instance ) ZPRINT result [1] $self;
+  action ( features : instance ) ZSENDMAIL result [1] $self;
+
+  mapping for ztb_ppc
+    {
+      OrderId        = orderid;
+      CreationDate   = creationdate;
+      base64         = base64;
+      SalesUnitPrice = salesunitprice;
+      Freight        = freight;
+      Customer       = customer;
+    }
+}

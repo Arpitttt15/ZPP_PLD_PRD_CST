@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for Planned Production Cost'
+define service ZSD_PLD_PRD_CST {
+  expose ZC_PLD_PRD_CST;
+}
